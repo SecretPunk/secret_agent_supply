@@ -105,10 +105,9 @@ nav .container {
   width: 100%;
 }
 
-img.glasses { /* because the glasses image is half the height of the others. */
+.glasses img { /* because the glasses image is half the height of the others. */
   max-width: 9rem;
   height: 4.5rem;
-  padding: 2rem 0;
   margin-top: 2rem;
 }
 
@@ -140,5 +139,52 @@ footer {
 footer .container {
   align-items: center;
   margin-top: 4rem;
-  height: 10rem;
+  height: 11rem;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1024px) {
+
+  .small-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .banner .container {
+    align-items: flex-end;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  .glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .new-arrival {
+    font-size: 0.9rem;
+  }
+
+  .headline {
+    font-size: 1.5rem;
+  }
+
+  nav span {
+    display: none;
+  }
+
+  .small-menu {
+    display:inline;
+  }
+
+  nav .container {
+    justify-content: center;
+  }
 }
