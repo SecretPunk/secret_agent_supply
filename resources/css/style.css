@@ -151,14 +151,11 @@ footer .container {
   }
 }
 
-@media only screen and (max-width: 470px) {
-
-  .banner .container {
-    align-items: flex-end;
-  }
-}
-
 @media only screen and (max-width: 1024px) {
+
+  .container {
+    width: 100%;
+  }
 
   .glasses {
     display: none;
@@ -181,10 +178,76 @@ footer .container {
   }
 
   .small-menu {
-    display:inline;
+    display: inline;
   }
 
   nav .container {
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .container {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .new-arrival {
+    padding: 1rem 0 1rem 0;
+    width: 100%;
+  }
+
+  .new-arrival span {
+    margin-left: 2rem;
+  }
+
+  .announcement {
+    font-size: 0.77rem;
+  }
+
+  .headline {
+    font-size: 1rem;
+  }
+
+  .product-grid .container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .location-hours .container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info {
+    width: 90%;
+  }
+
+  .hours {
+    margin-top: 0.5rem;
+  }
+
+  footer .container {
+    justify-content: center;
+    width: 100%;
   }
 }
